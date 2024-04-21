@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "cturk-ocr"
+version = "0.1.0"
+description = ""
+authors = ["Nguyen Tran <nguyen.tran1072e@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+transformers = "^4.40.0"
+pillow = "^10.3.0"
+datasets = "^2.19.0"
+pandas = "^2.2.2"
+sentencepiece = "^0.2.0"
+protobuf = "^5.26.1"
+
+[tool.poetry.group.cpu.dependencies]
+torch = {version = "^2.2.2+cpu", source = "pytorch_cpu"}
+accelerate = "^0.29.3"
+
+[tool.poetry.group.gpu.dependencies]
+
+[[tool.poetry.source]]
+name = "pytorch_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
