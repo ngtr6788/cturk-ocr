@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.9"
 jupyter = "^1.0.0"
 transformers = "^4.40.0"
 pillow = "^10.3.0"
@@ -20,7 +20,9 @@ protobuf = "^5.26.1"
 torch = {version = "^2.2.2+cpu", source = "pytorch_cpu"}
 accelerate = "^0.29.3"
 
+# HELP: I don't have a GPU. This is my best guess as to how to do this
 [tool.poetry.group.gpu.dependencies]
+torch = "^2.2.2"
 
 [[tool.poetry.source]]
 name = "pytorch_cpu"
