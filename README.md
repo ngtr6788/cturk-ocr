@@ -72,4 +72,5 @@ Some future next steps I can reasonably take:
 
 - Create a Gradio app to let others demo
 - Formally create a dataset for the testing data and evaluate how well it does
+- Add more training data to increase accuracy
 - Continue with the *Practical Deep Learning for Coders* videos (duh)
